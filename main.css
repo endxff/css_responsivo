@@ -1,0 +1,324 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+    margin-bottom: 1em;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 4em;
+}
+
+header {
+    background-color: rgb(88, 20, 85);
+    color: white;
+    margin-bottom: 2em;
+}
+
+h1 {
+    font-style: italic;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    margin-left: 1em;
+    font-weight: bold;
+}
+
+h2 {
+    color: rgb(88, 20, 85);
+    font-style: italic;
+    border-bottom: 2px solid rgb(88, 20, 85);
+    padding-bottom: 8px;
+    margin-bottom: 2em;
+}
+
+.sobre {
+    display: flex;
+    width: 100%;
+    text-align: justify;
+}
+
+.sobre img {
+    margin-bottom: 4em;
+    width: 400px;
+}
+
+.divSobre {
+    margin-left: 2em;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 24.25%);
+    column-gap: 1%;
+    row-gap: 6%;
+}
+
+.produtos img {
+    width: 100%;
+}
+
+.produtos li {
+    list-style: none;
+}
+
+h3 {
+    width: 100%;
+    margin: 1em 0 0.5em 0;
+    color: rgb(88, 20, 85);
+}
+
+.produtos p {
+    width: 100%;
+    font-size: 13px;
+}
+
+.produtos button {
+    border: none;
+    width: 100%;
+    background-color: rgb(88, 20, 85);
+    color: white;
+    font-weight: bold;
+    padding: 8px;
+    border-radius: 5px;
+    margin: 8px 0 8px 0;
+}
+
+.produtos button:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 640px) {
+    .container {
+        padding: 0 2em;
+    }
+
+    header .container {
+        width: 100%;
+        padding: 3em 2em;
+    }
+
+    .sobre {
+        display: block;
+        width: 100%;
+    }
+    
+    .sobre img {
+        width: 100%;
+        margin-bottom: 0em;
+    }
+    
+    .divSobre {
+        margin-left: 0;
+    }
+
+    h2 {
+        border-bottom: 2px solid rgb(55, 111, 213);
+        padding-bottom: 0.5em;
+        margin-bottom: 1.5em;
+        margin-top: 2em;
+    }
+
+    .produtos {
+        display: block;
+    }
+
+    h3 {
+        width: 100%;
+        margin: 0.5em 0 0.5em 0;
+    }
+
+    .produtos p {
+        margin-bottom: 8px;
+    }
+    
+    .produtos button {
+        border: none;
+        width: 100%;
+        background-color: rgb(55, 111, 213);
+        color: white;
+        font-weight: bold;
+        padding: 8px;
+        border-radius: 5px;
+        margin: 8px 0 32px 0;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    .container {
+        padding: 1em 5em;
+    }
+
+    header .container {
+        max-width: 1024px;
+        margin: 0 auto;
+        padding: 1em 5em;
+    }
+
+    h2 {
+        margin-top: 0;
+        margin-bottom: 1.5em;
+    }
+    
+    .divSobre {
+        margin-left: 0;
+    }
+
+    .sobre {
+        display: block;
+    }
+
+    .sobre img {
+        width: 100%;
+        margin-bottom: 2em;
+    }
+
+    .sobre p {
+        padding-top: 0em;
+    }
+
+    .produtos {
+        display: grid;
+        grid-template-columns: repeat(2, 49%);
+        column-gap: 2%;
+        row-gap: 3%;
+    }
+
+    .produtos img {
+        width: 100%;
+    }
+
+    h3 {
+        width: 100%;
+        margin: 0.5em 0 0.5em 0;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 3em;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(36, 111, 249);
+    color: white;
+    height: 4em;
+    margin-bottom: 1em; 
+}
+
+h1 {
+    font-style: italic;
+}
+
+header .container a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-left: 1em;
+}
+
+.sobre img {
+    width: 100%;
+    object-fit: cover;
+    padding: 1em 0;
+}
+
+h2 {
+    margin: 16px 0;
+    padding-bottom: 16px;
+    border-bottom: 3px solid rgb(36, 111, 249);
+    color: rgb(36, 111, 249);
+    font-style: italic;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    width: 100%;
+    padding: 0.5em;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(36, 111, 249);
+    border: none;
+    border-radius: 5px;
+} */
+/* 
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+    .produtos {
+        display: grid;
+        grid-template-columns: repeat(2, 33%);
+    }
+}
+
+@media screen and (max-width: 640px) {
+    header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2em;
+    }
+
+    .container {
+        padding: 2em;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .produtos img {
+        margin-top: 16px;
+        margin-bottom: 8px;
+    }
+
+    .sobre p {
+        margin-top: 40px;
+    }
+
+    .produtos p {
+        margin: 16px 0;
+        font-size: 0.9em;
+    }
+} */
